@@ -2,7 +2,7 @@
 a simple checkbox for xamarin forms based on NControl
 
 ## Setup
-* Available on NuGet: [Checky](https://www.nuget.org/packages/CutView/) 
+* Available on NuGet: [Checky](https://www.nuget.org/packages/Checky/) 
 * Add nuget package to your Xamarin.Forms .netStandard project and to your platform-specific projects (iOS and Android)
 * Initialize the NControl renderer on your platforms 
 
