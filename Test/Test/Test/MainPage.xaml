@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test"
+             xmlns:chk="clr-namespace:Checky;assembly=Checky"
+             x:Class="Test.MainPage">
+
+	<StackLayout VerticalOptions="CenterAndExpand" Spacing="40">
+
+
+    <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+    <chk:CheckBox IsChecked="true" CheckColor="Blue" BorderThickness="5" VerticalOptions="Center" BorderColor="Blue" >
+
+
+
+    <chk:CheckBox.CheckThickness>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="5" />
+                        <On Platform="iOS" Value="3" />
+                    </OnPlatform>
+                </chk:CheckBox.CheckThickness>
+            </chk:CheckBox>
+            <Label VerticalTextAlignment="Center"  Text="Hello, Xamarin.Forms" FontSize="16" />
+            
+        </StackLayout>
+
+
+        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+    <chk:CheckBox FillColor="Blue" BorderColor="Blue" IsChecked="true" CheckColor="White" BorderThickness="5" VerticalOptions="Center"  >
+
+
+
+    <chk:CheckBox.CheckThickness>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="5" />
+                        <On Platform="iOS" Value="3" />
+                    </OnPlatform>
+                </chk:CheckBox.CheckThickness>
+            </chk:CheckBox>
+            <Label VerticalTextAlignment="Center"  Text="Hello, Xamarin.Forms" FontSize="16" />
+            
+        </StackLayout>
+        
+       <!-- <chk:CheckBox   BorderThickness="4" IsChecked="true" CheckColor="Maroon" BorderColor="Maroon" CheckThickness="3" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />-->
+    </StackLayout>
+
+</ContentPage>
